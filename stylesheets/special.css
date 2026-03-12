@@ -1,0 +1,148 @@
+
+/* .cv_right { float:right; _position:relative; } */
+.cv_right {margin-left: 42px; position: absolute;}
+
+.image.avatar {
+      border-radius: 100%;
+      overflow: hidden;
+    }
+
+.image.avatar img {
+  border-radius: 100%;
+  display: block;
+  width: 45%;
+  /*position: absolute;
+  left: 0px;*/
+}
+
+
+h1 {
+  font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+h2, h3 {
+    /*color: #a31f34;*/
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 180%;
+}
+
+h2 {
+    padding-top: 0.8em;
+    font-size: 160%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+    font-size: 110%;
+    border-bottom: none;
+}
+
+/* Footer */
+
+  #footer {
+    border-top: 0;
+    color: #c0c0c0;
+    overflow: hidden;
+    padding: 2em 0 1em 0;
+  }
+
+    #footer .copyright {
+      line-height: 1em;
+      list-style: none;
+      padding: 0;
+    }
+
+      #footer .copyright li {
+        border-left: solid 1px #d4d4d4;
+        display: inline-block;
+        font-size: 0.8em;
+        margin-left: 1em;
+        padding-left: 1em;
+      }
+
+        #footer .copyright li:first-child {
+          border-left: 0;
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        #footer .copyright li a {
+          color: inherit;
+        }
+
+/* Experience section: more vertical spacing between items */
+#experience table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#experience table tr:first-child td {
+  padding-top: 5px;
+}
+
+/* Styling for the collapsible Research Philosophy box */
+.philosophy-box {
+  background-color: #f8f9fa; /* 浅灰背景色，显得干净 */
+  border-left: 2px solid #428bca; /* 左侧蓝色强调线，学术主页常用 */
+  border-radius: 4px;
+  padding: 12px 15px;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* 鼠标悬浮时的效果 */
+.philosophy-box:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.philosophy-box summary {
+  cursor: pointer;
+  outline: none;
+  color: #333;
+  font-size: 1.05em;
+  list-style: none; /* 隐藏默认的黑色小三角（可选） */
+  display: flex;
+  align-items: center;
+}
+
+/* 自定义展开箭头动画 */
+.philosophy-box summary::before {
+  content: "▶";
+  font-size: 0.8em;
+  color: #428bca;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 展开时的箭头状态 */
+.philosophy-box[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.philosophy-content {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+  color: #444;
+  line-height: 1.6;
+}
+
+.philosophy-content p:last-child {
+  margin-bottom: 0;
+}

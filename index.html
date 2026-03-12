@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66DNLPJ6PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+        gtag('config', 'G-66DNLPJ6PY');
+    </script>
+
+    <script src="javascripts/wechat.js"></script>
+
+    <!-- Disable cache -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jiawei Chen</title>
+
+    <!-- Replace with your own favicon -->
+    <link rel="icon" type="image/png" href="./images/logo/PKU.png">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/special.css">
+
+    <meta name="author" content="Jiawei Chen">
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <br />
+            <div class="header-identity">
+                <div align="left">
+                    <span class="image avatar">
+                        <!-- Replace with your profile photo -->
+                        <img src="images/profile.jpg"></img>
+                    </span>
+                </div>
+                <span align="left">
+                    <h1><b>Jiawei Chen</b></h1>
+                </span>
+            </div>
+
+            <p>
+                <a href="https://github.com/opqrst-chen">
+                    <font color="#222"><i class="fa fa-github fa-2x"></i> </font>
+                </a> &nbsp;
+                <a href="https://scholar.google.com/citations?user=YOUR_ID">
+                    <font color="#222"><i class="fa fa-graduation-cap fa-2x"></i> </font>
+                </a> &nbsp;
+                <a href="mailto:jiawei.chen@stu.pku.edu.cn">
+                    <font color="#222"><i class="fa fa-envelope fa-2x"></i> </font>
+                </a> &nbsp;
+                <a href="javascript:void(0);" onclick="showWechatQr();">
+                    <font color="#222"><i class="fa fa-wechat fa-2x"></i> </font>
+                </a> &nbsp;
+            </p>
+
+            <!-- 微信二维码遮罩层 (点击此处关闭弹窗) -->
+            <div id="wechatOverlay" onclick="closeWechatQr();"
+                style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.4); z-index:999;">
+                <!-- 微信二维码窗口 (阻止点击事件冒泡，避免点击窗口内部时也关闭) -->
+                <div onclick="event.stopPropagation();"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; border-radius:10px; padding:10px; box-shadow:0 4px 20px rgba(0,0,0,0.2);">
+                    <div style="position:relative; width:220px; text-align:center;">
+                        <!-- MacOS 风格关闭按钮 -->
+                        <!-- <button onclick="closeWechatQr();" 
+                                style="background-color:#ff5f57; border:none; width:12px; height:12px; border-radius:50%; position:absolute; top:4px; left:6px; cursor:pointer; padding:0;">
+                        </button> -->
+
+                        <!-- 二维码图片 -->
+                        <img src="images/wechat.jpg" alt="WeChat QR Code"
+                            style="width:180px; height:auto; margin-top:8px; margin-bottom:8px;">
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <h4>Contact:</h4>
+            <p>
+                <font face="courier" style="font-size:12px">jiawei.chen AT stu.pku.edu.cn</font>
+            </p>
+        </header>
+
+        <section class="outer">
+            <!-- About Me -->
+            <section id="about">
+                <h3> </h3>
+                <p>
+                    I am a Master's student at the <a href="https://www.ai.pku.edu.cn/en/">Institute for Artificial
+                        Intelligence (IAI)</a>, <a href="https://english.pku.edu.cn/">Peking University</a>.
+                </p>
+            </section>
+
+            <!-- News -->
+            <section id="news">
+                <h2>News</h2>
+                <ul>
+
+                </ul>
+            </section>
+
+            <!-- Publications -->
+            <section id="research">
+                <h2>Publications</h2>
+                <p><i>* indicates equal contribution</i></p>
+
+                <br>
+                
+
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+
+
+            <!-- Education & Experience -->
+            <section id="experience">
+                <h2>Education & Experience</h2>
+
+                <table width="100%" align="center" border="0" cellpadding="8">
+                   
+                </table>
+            </section>
+
+            <!-- Selected Awards and Honors -->
+            <section id="awards">
+                <h2>Selected Awards and Honors</h2>
+                <ul>
+                    
+                </ul>
+            </section>
+
+            <!-- Extracurricular Activities -->
+            <section id="extracurricularactivities">
+                <h2>Extracurricular Activities</h2>
+                <ul>
+                    
+                </ul>
+            </section>
+        </section>
+
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; Jiawei Chen 2026</li>
+                    <li>Based on <a href="https://www.linji.me/">Ji Lin</a>'s template</li>
+                </ul>
+            </div>
+        </section>
+        <script src="javascripts/scale.fix.js"></script>
+</body>
+
+</html>
